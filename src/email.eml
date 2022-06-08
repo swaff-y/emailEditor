@@ -1,0 +1,311 @@
+Received: from SY4PR01MB5468.ausprd01.prod.outlook.com (2603:10c6:10:1d::6) by
+ ME3PR01MB6739.ausprd01.prod.outlook.com with HTTPS; Thu, 2 Jun 2022 04:43:40
+ +0000
+Received: from ME2PR01CA0146.ausprd01.prod.outlook.com (2603:10c6:201:2f::14)
+ by SY4PR01MB5468.ausprd01.prod.outlook.com (2603:10c6:10:1d::6) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5314.13; Thu, 2 Jun
+ 2022 04:43:38 +0000
+Received: from ME3AUS01FT011.eop-AUS01.prod.protection.outlook.com
+ (2603:10c6:201:2f:cafe::d5) by ME2PR01CA0146.outlook.office365.com
+ (2603:10c6:201:2f::14) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5314.12 via Frontend
+ Transport; Thu, 2 Jun 2022 04:43:38 +0000
+Authentication-Results: spf=pass (sender IP is 69.169.228.209)
+ smtp.mailfrom=eu-central-1.amazonses.com; dkim=pass (signature was verified)
+ header.d=amazonses.com;dmarc=none action=none
+ header.from=mail-eur.niceincontact.com;compauth=pass reason=101
+Received-SPF: Pass (protection.outlook.com: domain of
+ eu-central-1.amazonses.com designates 69.169.228.209 as permitted sender)
+ receiver=protection.outlook.com; client-ip=69.169.228.209;
+ helo=b228-209.smtp-out.eu-central-1.amazonses.com; pr=C
+Received: from b228-209.smtp-out.eu-central-1.amazonses.com (69.169.228.209)
+ by ME3AUS01FT011.mail.protection.outlook.com (10.114.155.81) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5314.12 via Frontend Transport; Thu, 2 Jun 2022 04:43:35 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=54ecsf3zk7z4mwxwwox7z7bg6e5gwjsz; d=amazonses.com; t=1654145013;
+	h=From:Date:Subject:Message-Id:To:MIME-Version:Content-Type:Feedback-ID;
+	bh=+Qs5A6DQEKcItMUladD4Td9w1lknWE23dVieHekzSEY=;
+	b=V2XHfaDgC486BvKPTFeo+VCl7glev7gzdFh5hOMSaqYGGT5vuvinfJmKRFufTCQo
+	mFsD5gFEBuUJKs9lHTWB1lwPhu5U+ddYsxDdCFIwPLclv6/ua/6CfccbYXfyvD3tQM0
+	FG4PfkGUFW02HmHIMafBTs0n5ptedPA5z94KC0DM=
+From: dkbservice@mail-eur.niceincontact.com
+Date: Thu, 2 Jun 2022 04:43:33 +0000
+Subject: ##{224686656361-1654144871951}## Re: ##{224686656036-1654144291191}##
+ Spiggles test Email
+Message-ID: <0107018122b9d6e9-2358c172-b837-4c15-af18-e5dab3ae3eaf-000000@eu-central-1.amazonses.com>
+To: kyle.swaffield@coralactive.com
+Content-Type: multipart/alternative;
+	boundary=part_67de4237_cd97_4a00_bb74_8009594317d6
+Feedback-ID: 1.eu-central-1.n/jf0lXX4AGSAUWWBIFxGmHMP2jWRCWDm98d556W4M0=:AmazonSES
+X-SES-Outgoing: 2022.06.02-69.169.228.209
+Return-Path:
+ 0107018122b9d6e9-2358c172-b837-4c15-af18-e5dab3ae3eaf-000000@eu-central-1.amazonses.com
+X-MS-Exchange-Organization-ExpirationStartTime: 02 Jun 2022 04:43:37.0552
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ d717b87b-e369-4341-d163-08da44527531
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 0cd30b5c-e274-4bee-891d-9a2d3be1e8de:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-Exchange-Organization-AuthSource:
+ ME3AUS01FT011.eop-AUS01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: d717b87b-e369-4341-d163-08da44527531
+X-MS-TrafficTypeDiagnostic: SY4PR01MB5468:EE_
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:69.169.228.209;CTRY:US;LANG:de;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:b228-209.smtp-out.eu-central-1.amazonses.com;PTR:b228-209.smtp-out.eu-central-1.amazonses.com;CAT:NONE;SFS:(13230001)(4636009)(7596003)(166002)(7636003)(83170400001)(6916009)(2160300002)(84970400001)(36906005)(5660300002)(8676002)(1096003)(356005)(956004)(6506007)(7696005)(33964004)(36736006)(9686003)(26005)(66574015)(42882007)(83380400001)(53546011)(336012)(71280400001)(6486002)(79850400001)(15974865002);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 02 Jun 2022 04:43:35.9147
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: d717b87b-e369-4341-d163-08da44527531
+X-MS-Exchange-CrossTenant-Id: 0cd30b5c-e274-4bee-891d-9a2d3be1e8de
+X-MS-Exchange-CrossTenant-AuthSource:
+ ME3AUS01FT011.eop-AUS01.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SY4PR01MB5468
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.6954670
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.5314.012
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506458)(944626604)(920097)(930097);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?NklFVWZHZWUrNTVBRFV2MDFReGR2WGs4VzN2UHRaaVlvSC92M29FRmZBUnBG?=
+ =?utf-8?B?ajZkS2NwdEJwNHdkQ3FQNDMzVUtQUGFUajl1M2ppUGdRUWZraWJEYXNWb2d6?=
+ =?utf-8?B?VExjNXJRQlkwaWRuZnV3WVpZdzNsbCtsanFGQ0dUNXVpRVVjUm9CV1JLaHlF?=
+ =?utf-8?B?Y1plS2tLZ0ZBRHJ4WHByQURoRlUrZlpDZUZoL1Nzb05QQ3Q2UGZVN1o3bThS?=
+ =?utf-8?B?OG1YYk1RalQ4d3dHemRmU3Z5cXpIS3dCRW5sdW5tNTJYUkJxWUZWM1VOTzB1?=
+ =?utf-8?B?SzN2S0diRnhJYWIvSzQ2R0JvMDV6b0JYREV0MG5hNnUxVVFUWXI3UGI0QWRw?=
+ =?utf-8?B?UFM3U2VqcVF3cnNQS1V6Mm9xNkY1bjFSdFhUNlc1ZkJ3MytSc1ZFNjZHU1V6?=
+ =?utf-8?B?VlFOWGxkV2kzNkYvWGg5SVErNWowTm5wOC9lb2lMTTJHTUh0YmFVQ3l5cGVl?=
+ =?utf-8?B?U01Pd0tYSDZ6ZlE0YjkzQUN0NGIxT3JZalR4VGRzYkxnNGwranI1dFhOR0pi?=
+ =?utf-8?B?NGJNak1yYVZHM2c5U0pZWUMvZkgxOUdCb2JpS1B0UHhUaU5TNUUrYUFzR2pq?=
+ =?utf-8?B?RGV6anNadE5OanpTQllIMlhQcnVuRGVMUVpJNzRXTlcwNmpMQzhILzUvRnpo?=
+ =?utf-8?B?NWdrdzk2dkNxQ0U0WnVZZGtRdFE3djV0bFNNWmVEQmsrQUFrT2szUFdhekRx?=
+ =?utf-8?B?UFZRaE9haHdGUUFHOWdORWpSdGtLLzIyVGYxZ2c4M2JVSEJMYmt3RU4xNnR5?=
+ =?utf-8?B?c2hSOWU5RURKdEV6bVNTNXN2MllZcVU1TVEyNVZLN2x3cHlEOEVhSWg4c1Jr?=
+ =?utf-8?B?UU1yUjllUUs5Z3pkREhXNm9PcU96WEp6MUpRVlNnWVRDRkQrbkhXUnhSSWkv?=
+ =?utf-8?B?MjJoSUJKbFVDaTcweldGYnZZWHNtS3h6K1dVSklTUk9oVTFraWhsQUpjQzhT?=
+ =?utf-8?B?Q2lHWTJ6NnRWSHp0N1M5Nk1wM2MrS3RPeE1WUWxpYkFXYUk5WkEwdFNPdlVH?=
+ =?utf-8?B?aGExVEZsbU4zTExqMDUrY2tXSEZTbnN6TGsrQzFZS3k3SDJ4V3VqSTVOZU9v?=
+ =?utf-8?B?dFlGaFBER1pQTHVZQ0p0Zy9OcW5CNnFadmdVTXlwdGNUOW1MNkxLa2xEN0g4?=
+ =?utf-8?B?ZXJ5K204ZFkvSGthUUhGdDV5dE9WQXowOVJZb0duQXIvVzM3MVBCczBhZDQz?=
+ =?utf-8?B?ODUzbFp2OWxrbzBUeC92dE1YWjVNZm5aa2lFOFJmTjkwU3hVN0xlcE92bzFM?=
+ =?utf-8?B?V3BpN2tGM05ZUjdWdGVVWGVEZlRtNDJoN2R4Z3dPaDh4OENpdFdsWlBWdU1o?=
+ =?utf-8?B?YkJqZGgxUEljT2pjN1R4dWRTU21hT3J3RnBTbzI3a3hrZFY1M1FLZ1dhTlNC?=
+ =?utf-8?B?QjVGZ0J1eXd6VzY3MjkyNVpmbGp5bWF0d0ZMU3N4eUc3QzdMdFlpa2FOdWow?=
+ =?utf-8?B?Q0kySktMTENHc01IU2R4SmxPMzNjOFd0MmlGdVBRMThQM3MrTGM4WGtySG1O?=
+ =?utf-8?B?NXBzTGFJUDRmRTA3UVJXaEF5SGdNTFptcFJjNFI4dEhMbkVwWWw4WGdjOVFB?=
+ =?utf-8?B?VjJmbE9hWGVhaGlETmc1THJ4S2E2c2Z5Q3NzL2NLaWp4UUphWDlWaGZsMUo5?=
+ =?utf-8?B?bEpLN0ZQN3YyMkZ0ZTZWeVJzZ2FRQXJPS1YrbHJnK2pRQ3pJWHVmektnQm1h?=
+ =?utf-8?B?aXJRVDZWNzB3R3hYMnp1bHBGVm1aMktKMi9XM3dPWnAxMUk3ajZwd3pNaHhC?=
+ =?utf-8?B?YmM4SXVlZ2FzVnFadzFJYzlrVnNaVGZhZWhuTEZtR2VUQ2JmYjJRcUpVS1RX?=
+ =?utf-8?B?SmQrcVJVcVU5cmNBZ2JDNXVrWnVNbXJ4TVN2WFNjT0t3cmszWk5KblpnNmxu?=
+ =?utf-8?B?Vkc2OUJNTzFlbFFKS3J1azZ6K1lRT29uZ0RyR211RWtHN1Y3MUNRWnorWU5G?=
+ =?utf-8?B?WlQrZmlzTkNTTkJjbllqU2J3VGhieGN0WnNsVHljeitsQlZjZVQvTjhYWmxD?=
+ =?utf-8?B?elBWZmV1Ly9VN0d3ZXFmS1pucE4xT2wvSDlKNi9UaW9wUUh0eVR3TklBNi9m?=
+ =?utf-8?B?RkVYTC9rSVl0cTJ4bnlOZDkrbXRFclYxTk1FNWp6NnZ3R0NqZjI0dVZTRjVW?=
+ =?utf-8?B?RkU5STZscUh3MzIzUFlKTCtPV1BLT1U0b01CVCtCSmNNWlpWTjFDOFAxeVpN?=
+ =?utf-8?B?OWdreW5WKzdPKzQxTlF5aXlLYUJOTTNIN1NCZFBmT0l2emVxM3haKzBVSG1k?=
+ =?utf-8?B?eUJVYWpSSVRBRHlLVFpqczhaOXVZK1BUa3J5b1RpbDhuRCtDMGVkRVFRZTdj?=
+ =?utf-8?B?ejlrZEZqUnlxNFA2bVJCd3Y1U2NTdnphTjFkK1hqUGZqTmJkTVV1aTZEbXBH?=
+ =?utf-8?B?a3MyWnROazA5UGNJbkQrMzExSTVrQ3FDd0lNOVMzSC9IbFNsZmJxQ1EvN1ZC?=
+ =?utf-8?B?QTFGbGhFMVVLdkJ1a05KSzcrNEtIK3paV0VWV2Zya2c5UENSb3VEa0IrYTNG?=
+ =?utf-8?B?L1gzbU5rOUpzb0Z0MThSc28xQnlCdGNlU0tUUE14MkpMTDJ4Tm1DcjcyeFZ6?=
+ =?utf-8?B?MjBEaXYyM3pCR3ZSVy9COHVpZ3EycFNGUTRCQ0RKaHdDS1gvVXIxdHVGSnlv?=
+ =?utf-8?B?bzZuZkJ1Rmk4OWd5bGNIVEIzUklPTTM1SEpMemNmdEZyMjZYcVM0REh4YUxj?=
+ =?utf-8?B?bS9Qa3VkS29NWU81TUxZM0pkTTlNNnRMV3hMcWcvWkIzdEhrZG9TWG9mOWlj?=
+ =?utf-8?B?M0F6M2c2bmd5bnJQMzIzL2JuaGhyWUR1S1ZIVjBocnNaWUh5RURwcEkxNlJ1?=
+ =?utf-8?Q?dWvXYDsp1blPqrYvPySDZ2Ck75MSItpapg5YWEaNtJ?=
+MIME-Version: 1.0
+
+--part_67de4237_cd97_4a00_bb74_8009594317d6
+Content-Type: text/plain; charset=utf-8
+
+TestVon: kyle.swaffield@coralactive.comGeschickt: Donnerstag, 02. Juni 14:33An: softel_email_devtest_t@mail-eur.niceincontact.comBetreff: Re: ##{224686656036-1654144291191}## Spiggles test Email
+
+
+
+
+Response 1
+
+
+
+Kind Regards,
+Kyle Swaffield
+0450493936
+kyle.swaffield@coralactive.com
+
+
+
+
+
+
+
+
+On 2 Jun 2022, at 2:32 pm, 
+dkbservice@mail-eur.niceincontact.com wrote:
+
+
+
+External Reply
+
+
+
+Mit freundlichen Grüßen 
+
+
+
+
+
+Deutsche Kreditbank AG 
+
+
+
+Bereich Privatkunden/ 
+Telefon: 030 120 300 00 
+- E-Mail: info@dkb.de
+
+Internet: www.dkb.de
+- Facebook: www.fb.com/Deutsche.Kreditbank
+
+
+
+
+Unsere Informationen zu Datenverarbeitungen gemäß Artikel 13, 14 und 21 Datenschutz-Grundverordnung:
+dkb.de/datenschutz-dsgvo
+
+
+Deutsche Kreditbank AG 
+Vorsitzender des Aufsichtsrats: 
+Stephan Winkelmeier 
+Vorstand: Stefan Unterlandstättner (Vorsitzender), Tilo Hacke, Thomas Jebsen, Alexander von Dobschütz, Jan Walther, Arnulf Keese
+
+Sitz der Gesellschaft: Berlin ∙ BIC: BYLADEM1001 ∙ Handelsregister: Berlin-Charlottenburg (HRB 34165)
+
+
+
+
+Sollten Sie mal nicht zufrieden sein, dann sagen Sie es uns. Wie? Unsere Informationen zum Beschwerdeverfahren finden Sie
+hier
+. 
+
+
+
+
+Von: kyle.swaffield@coralactive.com
+Geschickt: Donnerstag, 02. Juni 14:30
+An: softel_email_devtest_t@mail-eur.niceincontact.com
+Betreff: Spiggles test Email
+This is a test email from spiggles
+kind regards,
+Kyle Swaffield
+
+
+
+
+
+
+
+
+
+
+--part_67de4237_cd97_4a00_bb74_8009594317d6
+Content-Type: text/html; charset=utf-8
+Content-Id: <GF3UDCGRZGU4.6Q4F95OCO1CL2@send-email-api>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><div style="font-size:12px;font-family:Arial, Helvetica, sans-serif;"><div>Test</div><div signature="true" contenteditable="false"></div><div><br>Von: kyle.swaffield@coralactive.com<br>Geschickt: Donnerstag, 02. Juni 14:33<br>An: softel_email_devtest_t@mail-eur.niceincontact.com<br>Betreff: Re: ##{224686656036-1654144291191}## Spiggles test Email<br>
+
+
+
+
+Response 1
+<div><br>
+<div>
+<div dir="auto" style="caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; word-wrap: break-word; -webkit-nbsp-mode: space; line-break: after-white-space;">
+<div>Kind Regards,</div>
+<div>Kyle Swaffield</div>
+<div>0450493936</div>
+<div><a href="mailto:kyle.swaffield@coralactive.com">kyle.swaffield@coralactive.com</a></div>
+<div><br>
+</div>
+</div>
+<br class="Apple-interchange-newline">
+<img apple-inline="yes" id="FD35AFF3-78E9-4141-B813-B65C80E4E7ED" src="cid:F63DEC9F-D4DF-4743-8F3A-23322CB923D8">
+</div>
+<div><br>
+<blockquote type="cite">
+<div>On 2 Jun 2022, at 2:32 pm, <a href="mailto:dkbservice@mail-eur.niceincontact.com">
+dkbservice@mail-eur.niceincontact.com</a> wrote:</div>
+<br class="Apple-interchange-newline">
+<div>
+<div style="font-size:12px;font-family:Arial, Helvetica, sans-serif;">
+<div>External Reply</div>
+<div signature="true" contenteditable="false">
+<div style="font-family:'Arial'">
+<div id="postscript">
+<p><span>Mit freundlichen Grüßen</span> </p>
+</div>
+<br>
+<div id="team">
+<div><br class="webkit-block-placeholder">
+</div>
+<p><span>Deutsche Kreditbank AG</span> </p>
+</div>
+<br>
+<div id="contact">
+<p><span>Bereich Privatkunden/</span> </p>
+<p><span>Telefon: </span><span>030 120 300 00</span> <span>
+-</span> <span>E-Mail: </span><span style="color:blue"><a href="mailto:info@dkb.de">info@dkb.de</a>
+</span></p>
+<p><span>Internet: </span><span style="color:blue"><a href="https://www.dkb.de/" target="_blank">www.dkb.de</a>
+</span><span>-</span> <span>Facebook: </span><span style="color:blue"><a href="https://www.fb.com/Deutsche.Kreditbank" target="_blank">www.fb.com/Deutsche.Kreditbank</a>
+</span></p>
+</div>
+<br>
+<div id="info">
+<p><span style="color:grey">Unsere Informationen zu Datenverarbeitungen gemäß Artikel 13, 14 und 21 Datenschutz-Grundverordnung:
+<a href="https://www.dkb.de/datenschutz-dsgvo" target="_blank">dkb.de/datenschutz-dsgvo</a></span>
+</p>
+<br>
+<p><span style="color:grey">Deutsche Kreditbank AG</span> </p>
+<p><span style="color:grey">Vorsitzender des Aufsichtsrats: </span>
+<span style="color:darkblue">Stephan Winkelmeier</span> </p>
+<p><span style="color:grey">Vorstand: Stefan Unterlandstättner (Vorsitzender), Tilo Hacke, Thomas Jebsen, Alexander von Dobschütz, Jan Walther, Arnulf Keese</span>
+</p>
+<p><span style="color:grey">Sitz der Gesellschaft: Berlin ∙ BIC: BYLADEM1001 ∙ Handelsregister: Berlin-Charlottenburg (HRB 34165)</span>
+</p>
+</div>
+<br>
+<div id="moreInfo">
+<p><span style="color:darkblue">Sollten Sie mal nicht zufrieden sein, dann sagen Sie es uns. Wie? Unsere Informationen zum Beschwerdeverfahren finden Sie
+</span><span style="color:blue"><a href="https://www.dkb.de/" target="_blank">hier</a>
+</span><span style="color:darkblue">.</span> </p>
+</div>
+</div>
+</div>
+<div><br>
+Von: <a href="mailto:kyle.swaffield@coralactive.com">kyle.swaffield@coralactive.com</a><br>
+Geschickt: Donnerstag, 02. Juni 14:30<br>
+An: <a href="mailto:softel_email_devtest_t@mail-eur.niceincontact.com">softel_email_devtest_t@mail-eur.niceincontact.com</a><br>
+Betreff: Spiggles test Email<br>
+<p>This is a test email from spiggles</p>
+<p>kind regards,<br>
+Kyle Swaffield</p>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+
+</div></div>
+--part_67de4237_cd97_4a00_bb74_8009594317d6--
